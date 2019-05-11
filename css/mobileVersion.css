@@ -1,0 +1,249 @@
+@import url('style.css') screen;
+
+@media screen and (max-width: 1024px){
+    .nav-row{
+        width: 90%;
+    }
+    .logo-item{
+        width: 40%;
+    }
+    .logo-item img{
+        width: 100%;
+    }
+    .nav-row .laptop-nav{
+        display: none;
+    }
+    .nav-bg{
+        height: 100%;
+    }
+    .hamburger-menu{
+        display: block;
+        width: 20%;
+        align-self: center;
+    }
+    .burger{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 28px;
+        display: inline-block;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        cursor: pointer;
+        border-bottom: 4px solid #fff;
+        transition: border-bottom 1s ease-in-out;
+        -webkit-transition: border-bottom 1s ease-in-out;
+    }
+
+    /*Fix for extra space in Firefox*/
+
+    .burger-check {
+      display: none;
+    }
+
+    .burger {
+      display: inline-block;
+      border: 0;
+      background: none;
+      outline: 0;
+      padding: 0;
+      cursor: pointer;
+      border-bottom: 4px solid #fff;
+      width: 28px;
+      transition: border-bottom 1s ease-in-out;
+      -webkit-transition: border-bottom 1s ease-in-out;
+}
+  .burger::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+  }
+  .burger:before {
+      content: "";
+      display: block;
+      border-bottom: 4px solid #fff;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+  .burger:after {
+      content: "";
+      display: block;
+      border-bottom: 4px solid #fff;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  .burger-check {
+      display: none;
+  }
+
+  .burger-check:checked ~ .burger {
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.8s ease-in-out;
+      -webkit-transition: border-bottom 0.8s ease-in-out;
+  }
+  .burger-check:checked ~ .burger:before {
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+  .burger-check:checked ~ .burger:after {
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+    /*Navigation*/
+
+    .navigation {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .burger-check:checked ~ .navigation {
+      max-height: 500px;
+      transition: max-height 0.5s ease-in-out;
+  }
+
+
+    ul.nav-list li a:hover{
+        border: none;
+    }
+}
+
+
+@media screen and (max-width: 1085px){
+    /*Features*/
+
+    p.about-main-paragraph{
+        width: 80%;
+        text-align: center;
+        align-self: center;
+        margin-top: -40px;
+        margin-bottom: 40px;
+    }
+    .features-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .features-item p{
+        width: 300px;
+        align-self: center;
+    }
+    .features-item img{
+        align-self: center;
+    }
+    
+    /*Features*/
+    
+    /*Clients*/
+
+    .clients-container{
+        height: 852px;
+    }
+    h1.clients-header{
+        margin-top: 40px;
+        margin-bottom: -20px;
+    }
+    .main-clients-block h3{
+        margin-top: 70px;
+        margin-bottom: -15px;
+    }
+
+    /*Clients*/
+    
+    /*Teamwork*/
+
+    .workers-row{
+        width: 270px;
+        padding: 0;
+        align-self: center;
+    }
+    .worker-item{
+        width: 270px;
+    }
+    .worker-img{
+        width: 270px;
+        margin-top: 50px;
+    }
+    .worker-info{
+        width: 270px;
+    }
+
+    /*Teamwork*/
+
+    /*Blog*/
+    .blog-item-row-1{
+        margin-bottom: 300px;
+    }
+    .blog-item-img{
+        margin-bottom: 20px;
+    }
+    .blog-container{
+        height: 1500px;
+    }
+    .arrow-block{
+        margin-top: 350px;
+    }
+    /*Blog*/
+
+    .follow-row{
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    ul.nav-list li a{
+        font-size: 14px;
+    }
+    .features-item p{
+        font-size: 13px;
+        width: 230px;
+    }
+    .features{
+        margin-top: 60px;
+    }
+    .Title-button-wrapper a{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    p.header-title-p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 405px){
+    .Title-button-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .Title-button-wrapper a{
+        width: 160px;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 680px){
+    .clients-container{
+        height: 1150px;
+    }
+}

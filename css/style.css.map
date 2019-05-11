@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,EAAE,AAAA,aAAa,CAAC;EACZ,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_mobileVersion.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
